@@ -1,0 +1,31 @@
+<nav class="navbar .navbar-inverse rounded navbar-toggleable-md" style="background-color: #160C28;">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand hidden-lg-up">Navigation</a>
+
+  <div id="main-navbar" class="collapse navbar-collapse">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% if page.permalink == '/' %} active {% endif %}">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item {% if page.permalink == '/about/' %} active {% endif %}">
+        <a class="nav-link" href="/about/">About WSCLT</a>
+      </li>
+      <li class="nav-item {% if page.permalink == '/clts/' %} active {% endif %}">
+        <a class="nav-link" href="/clts/">Community Land Trust FAQ</a>
+      </li>
+      <li class="nav-item {% if page.permalink == '/westside/' %} active {% endif %}">
+        <a class="nav-link" href="/westside/">Charlotte's West Side</a>
+      </li>
+    </ul>
+
+    <a href="/contribute/">
+      <button class="btn btn-outline-success my-2 my-sm-0">Get Involved!</button>
+    </a>
+
+  </div>
+
+</nav>
